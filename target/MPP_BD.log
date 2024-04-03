@@ -1,0 +1,446 @@
+30 Mar 2024 10:27:04,781 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+30 Mar 2024 10:27:08,393 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: vasi, vasi
+30 Mar 2024 10:27:08,393 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:08,394 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+30 Mar 2024 10:27:08,394 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+30 Mar 2024 10:27:08,394 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+30 Mar 2024 10:27:08,398 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+30 Mar 2024 10:27:08,592 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d04262d)
+30 Mar 2024 10:27:08,605 TRACE com.example.javafxmpp.repository.EmployeeRepo 201 findEmployee - Found employee: Employee{id='null', email='vasi', first_name='vasi', last_name='vasi', phone_number='vasi'}
+30 Mar 2024 10:27:08,605 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+30 Mar 2024 10:27:08,611 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+30 Mar 2024 10:27:08,613 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+30 Mar 2024 10:27:08,614 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+30 Mar 2024 10:27:08,663 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+30 Mar 2024 10:27:08,664 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+30 Mar 2024 10:27:08,664 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:08,665 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+30 Mar 2024 10:27:08,665 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+30 Mar 2024 10:27:08,665 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+30 Mar 2024 10:27:08,665 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+30 Mar 2024 10:27:08,666 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@676ac7c2)
+30 Mar 2024 10:27:08,675 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+30 Mar 2024 10:27:08,676 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+30 Mar 2024 10:27:22,247 DEBUG com.example.javafxmpp.controller.HomeController 107 handleSearch - Searching for trip with destination: Los Angeles, date: 2024-04-15, time: 06:00 PM
+30 Mar 2024 10:27:22,248 TRACE com.example.javafxmpp.repository.TripRepo 217 findByDestinationDateTime - Enter Find by destination, date, and time: Destination=Los Angeles, Date=2024-04-15, Time=06:00 PM
+30 Mar 2024 10:27:22,248 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,248 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@676ac7c2)
+30 Mar 2024 10:27:22,249 TRACE com.example.javafxmpp.repository.TripRepo 245 findByDestinationDateTime - Exit
+30 Mar 2024 10:27:22,249 TRACE com.example.javafxmpp.repository.TripRepo 251 findTripIdByDestinationDateTime - Enter Find trip ID by destination, date, and time: Destination=Los Angeles, Date=2024-04-15, Time=06:00 PM
+30 Mar 2024 10:27:22,249 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,249 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@676ac7c2)
+30 Mar 2024 10:27:22,250 TRACE com.example.javafxmpp.repository.TripRepo 270 findTripIdByDestinationDateTime - Exit
+30 Mar 2024 10:27:22,259 INFO  com.example.javafxmpp.controller.HomeController 114 handleSearch - Trip found: Trip{id='null', destination='Los Angeles', date=2024-04-15, departure_time='09:00 AM', arrival_time='06:00 PM', available_seats=120}
+30 Mar 2024 10:27:22,260 TRACE com.example.javafxmpp.repository.ResevationRepo 226 findBookedSeatsForTrip - Enter Find booked seats for trip: 10
+30 Mar 2024 10:27:22,260 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,261 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+30 Mar 2024 10:27:22,261 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+30 Mar 2024 10:27:22,261 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+30 Mar 2024 10:27:22,261 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+30 Mar 2024 10:27:22,262 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247e9918)
+30 Mar 2024 10:27:22,263 TRACE com.example.javafxmpp.repository.ResevationRepo 243 findBookedSeatsForTrip - Exit
+30 Mar 2024 10:27:22,263 DEBUG com.example.javafxmpp.controller.HomeController 161 populateSeatInformationTable - Populating seat information table...
+30 Mar 2024 10:27:22,264 DEBUG com.example.javafxmpp.controller.HomeController 187 populateSeatInformationTable - Seat information table populated.
+30 Mar 2024 10:27:22,279 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,280 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247e9918)
+30 Mar 2024 10:27:22,282 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,282 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247e9918)
+30 Mar 2024 10:27:22,283 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,284 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247e9918)
+30 Mar 2024 10:27:22,293 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+30 Mar 2024 10:27:22,293 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247e9918)
+31 Mar 2024 17:25:14,872 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 11:50:57,005 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 11:51:33,638 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: vasi, vasi
+01 Apr 2024 11:51:33,639 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 11:51:33,639 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 11:51:33,640 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 11:51:33,640 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 11:51:33,640 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 11:51:34,059 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@d5ec1b7)
+01 Apr 2024 11:51:34,073 TRACE com.example.javafxmpp.repository.EmployeeRepo 201 findEmployee - Found employee: Employee{id='null', email='vasi', first_name='vasi', last_name='vasi', phone_number='vasi'}
+01 Apr 2024 11:51:34,074 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 11:51:34,096 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 11:51:34,098 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 11:51:34,100 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 11:51:34,178 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 11:51:34,179 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 11:51:34,179 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 11:51:34,179 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 11:51:34,179 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 11:51:34,179 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 11:51:34,180 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 11:51:34,181 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5ed9625d)
+01 Apr 2024 11:51:34,206 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 11:51:34,214 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 16:12:37,507 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:05,586 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:05,600 TRACE com.example.javafxmpp.repository.EmployeeRepo 27 save - Enter Saving task Employee{id='null', email='Ion', first_name='Pop', last_name='ion.pop@yahoo.com', phone_number='0749268371'}
+01 Apr 2024 16:13:05,600 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:13:05,600 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:13:05,600 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:13:05,601 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:13:05,601 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:13:05,822 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@68fc93e7)
+01 Apr 2024 16:13:05,837 TRACE com.example.javafxmpp.repository.EmployeeRepo 41 save - Saved 1 instances
+01 Apr 2024 16:13:05,837 TRACE com.example.javafxmpp.repository.EmployeeRepo 47 save - Exit
+01 Apr 2024 16:13:05,849 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:05,852 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:05,853 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:05,912 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 16:13:05,913 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 16:13:05,914 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:13:05,914 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:13:05,914 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:13:05,914 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:13:05,914 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:13:05,917 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@76620789)
+01 Apr 2024 16:13:05,929 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 16:13:05,931 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 16:13:16,159 INFO  com.example.javafxmpp.controller.HomeController 253 handleLogout - Logging out...
+01 Apr 2024 16:13:16,161 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:16,208 INFO  com.example.javafxmpp.controller.HomeController 273 handleLogout - Logged out successfully.
+01 Apr 2024 16:13:29,429 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: ion.pop@yahoo.com, parola
+01 Apr 2024 16:13:29,429 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:13:29,429 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:13:29,429 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:13:29,430 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:13:29,430 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:13:29,431 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f64ec8a)
+01 Apr 2024 16:13:29,432 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 16:13:38,282 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:13:48,055 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: ion.pop@yahoo.com, parola
+01 Apr 2024 16:13:48,056 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:13:48,056 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:13:48,056 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:13:48,057 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:13:48,057 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:13:48,241 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31b4d126)
+01 Apr 2024 16:13:48,244 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 16:13:52,184 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: ion, parola
+01 Apr 2024 16:13:52,184 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:13:52,185 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31b4d126)
+01 Apr 2024 16:13:52,185 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 16:14:48,340 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:15,026 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:43,721 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:43,730 TRACE com.example.javafxmpp.repository.EmployeeRepo 27 save - Enter Saving task Employee{id='null', email='alex.pop@yahoo.com', first_name='Alex', last_name='Pop', phone_number='0745124423'}
+01 Apr 2024 16:15:43,731 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:15:43,731 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:15:43,731 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:15:43,731 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:15:43,731 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:15:43,930 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5249ef12)
+01 Apr 2024 16:15:43,939 TRACE com.example.javafxmpp.repository.EmployeeRepo 41 save - Saved 1 instances
+01 Apr 2024 16:15:43,940 TRACE com.example.javafxmpp.repository.EmployeeRepo 47 save - Exit
+01 Apr 2024 16:15:43,947 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:43,949 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:43,950 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:44,012 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 16:15:44,013 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 16:15:44,014 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:15:44,014 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:15:44,014 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:15:44,015 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:15:44,015 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:15:44,018 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1c9a4c63)
+01 Apr 2024 16:15:44,030 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 16:15:44,032 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 16:15:47,728 INFO  com.example.javafxmpp.controller.HomeController 253 handleLogout - Logging out...
+01 Apr 2024 16:15:47,730 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:15:47,785 INFO  com.example.javafxmpp.controller.HomeController 273 handleLogout - Logged out successfully.
+01 Apr 2024 16:16:02,728 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: alex.pop@yahoo.com, parola
+01 Apr 2024 16:16:02,728 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:16:02,729 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:16:02,729 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:16:02,729 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:16:02,730 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:16:02,731 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b1ecf18)
+01 Apr 2024 16:16:02,731 TRACE com.example.javafxmpp.repository.EmployeeRepo 201 findEmployee - Found employee: Employee{id='null', email='alex.pop@yahoo.com', first_name='Alex', last_name='Pop', phone_number='0745124423'}
+01 Apr 2024 16:16:02,731 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 16:16:02,733 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:16:02,733 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:16:02,734 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:16:02,748 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 16:16:02,748 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 16:16:02,748 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:16:02,749 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:16:02,749 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:16:02,749 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:16:02,749 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:16:02,750 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@68d36bb)
+01 Apr 2024 16:16:02,751 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 16:16:02,751 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 16:34:44,553 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:34:54,298 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: vasi, vasi
+01 Apr 2024 16:34:54,298 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:34:54,298 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:34:54,299 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:34:54,299 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:34:54,300 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:34:54,913 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@46a87dff)
+01 Apr 2024 16:34:54,929 TRACE com.example.javafxmpp.repository.EmployeeRepo 201 findEmployee - Found employee: Employee{id='null', email='vasi', first_name='vasi', last_name='vasi', phone_number='vasi'}
+01 Apr 2024 16:34:54,930 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 16:34:54,935 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:34:54,938 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:34:54,939 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:34:55,043 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 16:34:55,044 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 16:34:55,044 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:34:55,045 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:34:55,045 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:34:55,045 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:34:55,046 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:34:55,047 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6ec1718c)
+01 Apr 2024 16:34:55,071 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 16:34:55,072 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 16:36:07,158 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:36:11,369 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: vasi, vasi
+01 Apr 2024 16:36:11,369 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:11,370 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:36:11,370 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:36:11,370 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:36:11,371 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:36:11,754 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@aa79860)
+01 Apr 2024 16:36:11,765 TRACE com.example.javafxmpp.repository.EmployeeRepo 201 findEmployee - Found employee: Employee{id='null', email='vasi', first_name='vasi', last_name='vasi', phone_number='vasi'}
+01 Apr 2024 16:36:11,765 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 16:36:11,770 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:36:11,772 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:36:11,774 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 16:36:11,849 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 16:36:11,850 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 16:36:11,850 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:11,851 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:36:11,851 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:36:11,851 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:36:11,851 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:36:11,853 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1bc62a2f)
+01 Apr 2024 16:36:11,868 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 16:36:11,869 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 16:36:35,570 DEBUG com.example.javafxmpp.controller.HomeController 107 handleSearch - Searching for trip with destination: Los Angeles, date: 2024-04-15, time: 06:00 PM
+01 Apr 2024 16:36:35,570 TRACE com.example.javafxmpp.repository.TripRepo 217 findByDestinationDateTime - Enter Find by destination, date, and time: Destination=Los Angeles, Date=2024-04-15, Time=06:00 PM
+01 Apr 2024 16:36:35,570 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,571 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1bc62a2f)
+01 Apr 2024 16:36:35,572 TRACE com.example.javafxmpp.repository.TripRepo 245 findByDestinationDateTime - Exit
+01 Apr 2024 16:36:35,572 TRACE com.example.javafxmpp.repository.TripRepo 251 findTripIdByDestinationDateTime - Enter Find trip ID by destination, date, and time: Destination=Los Angeles, Date=2024-04-15, Time=06:00 PM
+01 Apr 2024 16:36:35,572 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,572 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1bc62a2f)
+01 Apr 2024 16:36:35,573 TRACE com.example.javafxmpp.repository.TripRepo 270 findTripIdByDestinationDateTime - Exit
+01 Apr 2024 16:36:35,579 INFO  com.example.javafxmpp.controller.HomeController 114 handleSearch - Trip found: Trip{id='null', destination='Los Angeles', date=2024-04-15, departure_time='09:00 AM', arrival_time='06:00 PM', available_seats=120}
+01 Apr 2024 16:36:35,581 TRACE com.example.javafxmpp.repository.ResevationRepo 226 findBookedSeatsForTrip - Enter Find booked seats for trip: 10
+01 Apr 2024 16:36:35,581 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,581 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 16:36:35,582 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 16:36:35,582 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 16:36:35,582 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 16:36:35,583 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@abd2289)
+01 Apr 2024 16:36:35,583 TRACE com.example.javafxmpp.repository.ResevationRepo 243 findBookedSeatsForTrip - Exit
+01 Apr 2024 16:36:35,584 DEBUG com.example.javafxmpp.controller.HomeController 161 populateSeatInformationTable - Populating seat information table...
+01 Apr 2024 16:36:35,585 DEBUG com.example.javafxmpp.controller.HomeController 187 populateSeatInformationTable - Seat information table populated.
+01 Apr 2024 16:36:35,598 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,598 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@abd2289)
+01 Apr 2024 16:36:35,600 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,601 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@abd2289)
+01 Apr 2024 16:36:35,602 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,602 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@abd2289)
+01 Apr 2024 16:36:35,611 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 16:36:35,611 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@abd2289)
+01 Apr 2024 17:25:45,771 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:25:51,708 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:26:02,464 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: alex.pop@yajoo.com, parola
+01 Apr 2024 17:26:02,464 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:02,464 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 17:26:02,464 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 17:26:02,465 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 17:26:02,465 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 17:26:02,879 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@33d3d763)
+01 Apr 2024 17:26:02,882 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 17:26:08,091 TRACE com.example.javafxmpp.repository.EmployeeRepo 184 findEmployee - Enter Find employee by email and password: alex.pop@yahoo.com, parola
+01 Apr 2024 17:26:08,092 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:08,092 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@33d3d763)
+01 Apr 2024 17:26:08,098 TRACE com.example.javafxmpp.repository.EmployeeRepo 201 findEmployee - Found employee: Employee{id='null', email='alex.pop@yahoo.com', first_name='Alex', last_name='Pop', phone_number='0745124423'}
+01 Apr 2024 17:26:08,098 TRACE com.example.javafxmpp.repository.EmployeeRepo 208 findEmployee - Exit
+01 Apr 2024 17:26:08,105 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:26:08,106 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:26:08,107 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:26:08,169 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 17:26:08,170 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 17:26:08,171 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:08,171 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 17:26:08,171 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 17:26:08,171 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 17:26:08,171 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 17:26:08,172 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1e2af853)
+01 Apr 2024 17:26:08,182 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 17:26:08,183 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+01 Apr 2024 17:26:48,963 DEBUG com.example.javafxmpp.controller.HomeController 107 handleSearch - Searching for trip with destination: Los Angeles, date: 2024-04-15, time: 06:00 PM
+01 Apr 2024 17:26:48,964 TRACE com.example.javafxmpp.repository.TripRepo 217 findByDestinationDateTime - Enter Find by destination, date, and time: Destination=Los Angeles, Date=2024-04-15, Time=06:00 PM
+01 Apr 2024 17:26:48,964 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:48,964 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1e2af853)
+01 Apr 2024 17:26:48,965 TRACE com.example.javafxmpp.repository.TripRepo 245 findByDestinationDateTime - Exit
+01 Apr 2024 17:26:48,965 TRACE com.example.javafxmpp.repository.TripRepo 251 findTripIdByDestinationDateTime - Enter Find trip ID by destination, date, and time: Destination=Los Angeles, Date=2024-04-15, Time=06:00 PM
+01 Apr 2024 17:26:48,966 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:48,966 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1e2af853)
+01 Apr 2024 17:26:48,966 TRACE com.example.javafxmpp.repository.TripRepo 270 findTripIdByDestinationDateTime - Exit
+01 Apr 2024 17:26:48,972 INFO  com.example.javafxmpp.controller.HomeController 114 handleSearch - Trip found: Trip{id='null', destination='Los Angeles', date=2024-04-15, departure_time='09:00 AM', arrival_time='06:00 PM', available_seats=120}
+01 Apr 2024 17:26:48,976 TRACE com.example.javafxmpp.repository.ResevationRepo 226 findBookedSeatsForTrip - Enter Find booked seats for trip: 10
+01 Apr 2024 17:26:48,976 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:48,976 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 17:26:48,976 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 17:26:48,977 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 17:26:48,977 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 17:26:48,978 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@334170ad)
+01 Apr 2024 17:26:48,979 TRACE com.example.javafxmpp.repository.ResevationRepo 243 findBookedSeatsForTrip - Exit
+01 Apr 2024 17:26:48,979 DEBUG com.example.javafxmpp.controller.HomeController 161 populateSeatInformationTable - Populating seat information table...
+01 Apr 2024 17:26:48,983 DEBUG com.example.javafxmpp.controller.HomeController 187 populateSeatInformationTable - Seat information table populated.
+01 Apr 2024 17:26:48,997 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:48,997 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@334170ad)
+01 Apr 2024 17:26:49,000 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:49,000 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@334170ad)
+01 Apr 2024 17:26:49,001 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:49,001 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@334170ad)
+01 Apr 2024 17:26:49,011 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:26:49,011 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@334170ad)
+01 Apr 2024 17:27:22,668 DEBUG com.example.javafxmpp.controller.HomeController 135 handleBookSeat - Handling booking seat...
+01 Apr 2024 17:27:22,669 TRACE com.example.javafxmpp.repository.TripRepo 251 findTripIdByDestinationDateTime - Enter Find trip ID by destination, date, and time: Destination=New York, Date=2024-04-10, Time=05:00 PM
+01 Apr 2024 17:27:22,669 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:22,670 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1e2af853)
+01 Apr 2024 17:27:22,670 TRACE com.example.javafxmpp.repository.TripRepo 270 findTripIdByDestinationDateTime - Exit
+01 Apr 2024 17:27:22,670 TRACE com.example.javafxmpp.repository.ResevationRepo 188 checkIfSeatReserved - Enter Check if seat is reserved
+01 Apr 2024 17:27:22,671 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:22,671 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@334170ad)
+01 Apr 2024 17:27:22,671 TRACE com.example.javafxmpp.repository.ResevationRepo 204 checkIfSeatReserved - Seat 1 on trip 9 is reserved: false
+01 Apr 2024 17:27:22,672 TRACE com.example.javafxmpp.repository.ResevationRepo 221 checkIfSeatReserved - Exit
+01 Apr 2024 17:27:22,673 INFO  com.example.javafxmpp.controller.HomeController 151 handleBookSeat - Creating reservation: Reservation{id='null', trip_id='9', seat_number=1, customer_first_name='Alex', customer_last_name='Gruia'}
+01 Apr 2024 17:27:22,673 TRACE com.example.javafxmpp.repository.ResevationRepo 30 save - Enter Saving task Reservation{id='null', trip_id='9', seat_number=1, customer_first_name='Alex', customer_last_name='Gruia'}
+01 Apr 2024 17:27:22,674 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:22,674 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 17:27:22,674 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 17:27:22,674 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 17:27:22,675 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 17:27:22,675 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:22,687 TRACE com.example.javafxmpp.repository.ResevationRepo 43 save - Saved 1 instances
+01 Apr 2024 17:27:22,687 TRACE com.example.javafxmpp.repository.ResevationRepo 49 save - Exit
+01 Apr 2024 17:27:34,234 DEBUG com.example.javafxmpp.controller.HomeController 107 handleSearch - Searching for trip with destination: New York, date: 2024-04-10, time: 05:00 PM
+01 Apr 2024 17:27:34,235 TRACE com.example.javafxmpp.repository.TripRepo 217 findByDestinationDateTime - Enter Find by destination, date, and time: Destination=New York, Date=2024-04-10, Time=05:00 PM
+01 Apr 2024 17:27:34,235 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:34,235 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1e2af853)
+01 Apr 2024 17:27:34,236 TRACE com.example.javafxmpp.repository.TripRepo 245 findByDestinationDateTime - Exit
+01 Apr 2024 17:27:34,236 TRACE com.example.javafxmpp.repository.TripRepo 251 findTripIdByDestinationDateTime - Enter Find trip ID by destination, date, and time: Destination=New York, Date=2024-04-10, Time=05:00 PM
+01 Apr 2024 17:27:34,236 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:34,236 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1e2af853)
+01 Apr 2024 17:27:34,237 TRACE com.example.javafxmpp.repository.TripRepo 270 findTripIdByDestinationDateTime - Exit
+01 Apr 2024 17:27:34,237 INFO  com.example.javafxmpp.controller.HomeController 114 handleSearch - Trip found: Trip{id='null', destination='New York', date=2024-04-10, departure_time='08:00 AM', arrival_time='05:00 PM', available_seats=100}
+01 Apr 2024 17:27:34,237 TRACE com.example.javafxmpp.repository.ResevationRepo 226 findBookedSeatsForTrip - Enter Find booked seats for trip: 9
+01 Apr 2024 17:27:34,237 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:34,238 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:34,238 TRACE com.example.javafxmpp.repository.ResevationRepo 243 findBookedSeatsForTrip - Exit
+01 Apr 2024 17:27:34,238 DEBUG com.example.javafxmpp.controller.HomeController 161 populateSeatInformationTable - Populating seat information table...
+01 Apr 2024 17:27:34,239 DEBUG com.example.javafxmpp.controller.HomeController 187 populateSeatInformationTable - Seat information table populated.
+01 Apr 2024 17:27:34,244 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:34,244 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:34,245 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:34,246 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:34,246 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:34,246 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:35,184 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:35,184 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:35,185 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:35,185 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52fc5948)
+01 Apr 2024 17:27:38,917 INFO  com.example.javafxmpp.controller.HomeController 253 handleLogout - Logging out...
+01 Apr 2024 17:27:38,918 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:27:38,977 INFO  com.example.javafxmpp.controller.HomeController 273 handleLogout - Logged out successfully.
+01 Apr 2024 17:27:52,983 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:27:52,986 TRACE com.example.javafxmpp.repository.EmployeeRepo 27 save - Enter Saving task Employee{id='null', email='fdsfs', first_name='asfas', last_name='sdffd', phone_number='07367373434'}
+01 Apr 2024 17:27:52,986 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:52,986 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 17:27:52,986 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 17:27:52,986 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 17:27:52,986 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 17:27:52,988 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7808d43f)
+01 Apr 2024 17:27:52,996 TRACE com.example.javafxmpp.repository.EmployeeRepo 41 save - Saved 1 instances
+01 Apr 2024 17:27:52,997 TRACE com.example.javafxmpp.repository.EmployeeRepo 47 save - Exit
+01 Apr 2024 17:27:52,999 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:27:52,999 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:27:53,000 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+01 Apr 2024 17:27:53,015 DEBUG com.example.javafxmpp.controller.HomeController 235 populateTripsTable - Populating trips table...
+01 Apr 2024 17:27:53,015 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+01 Apr 2024 17:27:53,016 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+01 Apr 2024 17:27:53,016 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+01 Apr 2024 17:27:53,016 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+01 Apr 2024 17:27:53,016 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+01 Apr 2024 17:27:53,016 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+01 Apr 2024 17:27:53,018 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@234c37a4)
+01 Apr 2024 17:27:53,019 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+01 Apr 2024 17:27:53,019 DEBUG com.example.javafxmpp.controller.HomeController 248 populateTripsTable - Trips table populated.
+02 Apr 2024 13:17:38,181 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+02 Apr 2024 13:17:38,188 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+02 Apr 2024 13:17:38,190 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+02 Apr 2024 13:19:18,082 TRACE com.example.javafxmpp.repository.EmployeeRepo 185 findEmployee - Enter Find employee by email and password: vasi, vasi
+02 Apr 2024 13:19:18,083 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:18,083 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+02 Apr 2024 13:19:18,084 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+02 Apr 2024 13:19:18,085 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+02 Apr 2024 13:19:18,085 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+02 Apr 2024 13:19:18,472 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@721b23bd)
+02 Apr 2024 13:19:18,488 TRACE com.example.javafxmpp.repository.EmployeeRepo 202 findEmployee - Found employee: Employee{id='null', email='vasi', first_name='vasi', last_name='vasi', phone_number='vasi'}
+02 Apr 2024 13:19:18,489 TRACE com.example.javafxmpp.repository.EmployeeRepo 209 findEmployee - Exit
+02 Apr 2024 13:19:18,577 DEBUG com.example.javafxmpp.controller.HomeController 193 populateTripsTable - Populating trips table...
+02 Apr 2024 13:19:18,581 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+02 Apr 2024 13:19:18,581 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:18,581 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+02 Apr 2024 13:19:18,582 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+02 Apr 2024 13:19:18,582 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+02 Apr 2024 13:19:18,582 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+02 Apr 2024 13:19:18,583 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c590e07)
+02 Apr 2024 13:19:18,597 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+02 Apr 2024 13:19:18,599 DEBUG com.example.javafxmpp.controller.HomeController 206 populateTripsTable - Trips table populated.
+02 Apr 2024 13:19:39,420 DEBUG com.example.javafxmpp.controller.HomeController 93 handleSearch - Searching for trip with destination: New York, date: 2024-04-10, time: 05:00 PM
+02 Apr 2024 13:19:39,420 TRACE com.example.javafxmpp.repository.TripRepo 217 findByDestinationDateTime - Enter Find by destination, date, and time: Destination=New York, Date=2024-04-10, Time=05:00 PM
+02 Apr 2024 13:19:39,420 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:39,421 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c590e07)
+02 Apr 2024 13:19:39,422 TRACE com.example.javafxmpp.repository.TripRepo 245 findByDestinationDateTime - Exit
+02 Apr 2024 13:19:39,422 TRACE com.example.javafxmpp.repository.TripRepo 251 findTripIdByDestinationDateTime - Enter Find trip ID by destination, date, and time: Destination=New York, Date=2024-04-10, Time=05:00 PM
+02 Apr 2024 13:19:39,423 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:39,423 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c590e07)
+02 Apr 2024 13:19:39,423 TRACE com.example.javafxmpp.repository.TripRepo 270 findTripIdByDestinationDateTime - Exit
+02 Apr 2024 13:19:39,436 INFO  com.example.javafxmpp.controller.HomeController 100 handleSearch - Trip found: Trip{id='null', destination='New York', date=2024-04-10, departure_time='08:00 AM', arrival_time='05:00 PM', available_seats=100}
+02 Apr 2024 13:19:39,439 TRACE com.example.javafxmpp.repository.ResevationRepo 226 findBookedSeatsForTrip - Enter Find booked seats for trip: 9
+02 Apr 2024 13:19:39,439 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:39,439 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+02 Apr 2024 13:19:39,439 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+02 Apr 2024 13:19:39,440 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+02 Apr 2024 13:19:39,440 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+02 Apr 2024 13:19:39,441 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b56f1a1)
+02 Apr 2024 13:19:39,442 TRACE com.example.javafxmpp.repository.ResevationRepo 243 findBookedSeatsForTrip - Exit
+02 Apr 2024 13:19:39,442 DEBUG com.example.javafxmpp.controller.HomeController 147 populateSeatInformationTable - Populating seat information table...
+02 Apr 2024 13:19:39,448 DEBUG com.example.javafxmpp.controller.HomeController 173 populateSeatInformationTable - Seat information table populated.
+02 Apr 2024 13:19:39,463 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:39,464 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b56f1a1)
+02 Apr 2024 13:19:39,471 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 13:19:39,471 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b56f1a1)
+02 Apr 2024 13:19:44,963 DEBUG com.example.javafxmpp.controller.HomeController 121 handleBookSeat - Handling booking seat...
+02 Apr 2024 13:19:46,723 INFO  com.example.javafxmpp.controller.HomeController 211 handleLogout - Logging out...
+02 Apr 2024 13:19:46,837 INFO  com.example.javafxmpp.controller.HomeController 231 handleLogout - Logged out successfully.
+02 Apr 2024 16:20:16,365 INFO  com.example.javafxmpp.repository.EmployeeRepo 20 <init> - Initializing EmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+02 Apr 2024 16:20:16,377 INFO  com.example.javafxmpp.repository.TripRepo 24 <init> - Initializing TripDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+02 Apr 2024 16:20:16,381 INFO  com.example.javafxmpp.repository.ResevationRepo 24 <init> - Initializing ReservationDBRepository with properties: {jdbc.url=jdbc:sqlite:transport.db} 
+02 Apr 2024 16:20:28,812 TRACE com.example.javafxmpp.repository.EmployeeRepo 185 findEmployee - Enter Find employee by email and password: vasi, vasi
+02 Apr 2024 16:20:28,813 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 16:20:28,813 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+02 Apr 2024 16:20:28,813 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+02 Apr 2024 16:20:28,814 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+02 Apr 2024 16:20:28,814 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+02 Apr 2024 16:20:29,162 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@41cc2b8)
+02 Apr 2024 16:20:29,170 TRACE com.example.javafxmpp.repository.EmployeeRepo 202 findEmployee - Found employee: Employee{id='null', email='vasi', first_name='vasi', last_name='vasi', phone_number='vasi'}
+02 Apr 2024 16:20:29,171 TRACE com.example.javafxmpp.repository.EmployeeRepo 209 findEmployee - Exit
+02 Apr 2024 16:20:29,234 DEBUG com.example.javafxmpp.controller.HomeController 193 populateTripsTable - Populating trips table...
+02 Apr 2024 16:20:29,235 TRACE com.example.javafxmpp.repository.TripRepo 185 findAll - Enter Find all tasks
+02 Apr 2024 16:20:29,235 TRACE com.example.javafxmpp.utils.JDBCUtils 49 getConnection - Enter
+02 Apr 2024 16:20:29,236 TRACE com.example.javafxmpp.utils.JDBCUtils 23 getNewConnection - Enter
+02 Apr 2024 16:20:29,236 INFO  com.example.javafxmpp.utils.JDBCUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:transport.db
+02 Apr 2024 16:20:29,236 INFO  com.example.javafxmpp.utils.JDBCUtils 30 getNewConnection - user: null
+02 Apr 2024 16:20:29,236 INFO  com.example.javafxmpp.utils.JDBCUtils 31 getNewConnection - password: null
+02 Apr 2024 16:20:29,237 TRACE com.example.javafxmpp.utils.JDBCUtils 60 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5249ef12)
+02 Apr 2024 16:20:29,247 TRACE com.example.javafxmpp.repository.TripRepo 211 findAll - Exit
+02 Apr 2024 16:20:29,248 DEBUG com.example.javafxmpp.controller.HomeController 206 populateTripsTable - Trips table populated.
